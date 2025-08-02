@@ -115,35 +115,35 @@ const HomePage = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="inline-flex items-center px-6 py-3 bg-white rounded-full shadow-lg text-primary-700 text-sm font-medium mb-8 border border-primary-100"
+                  className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-white rounded-full shadow-lg text-primary-700 text-xs sm:text-sm font-medium mb-6 sm:mb-8 border border-primary-100"
                 >
                   <Sparkles className="w-4 h-4 mr-2 text-primary-500" />
                   Premium Natural Soap Collection
                 </motion.div>
                 
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-display text-gray-900 mb-6 leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-display text-gray-900 mb-4 sm:mb-6 leading-tight mobile-hero-text">
                   Pure & Natural
                   <span className="block bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">
-                    Soap Care
+                    Moringa Soap
                   </span>
                 </h1>
                 
-                <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+                <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl px-4 sm:px-0">
                   Transform your skin with our premium collection of handcrafted moringa and tea tree oil soaps. 
                   Made with 100% organic ingredients for healthy, nourished skin.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 px-4 sm:px-0">
                   <Link
                     to="/products"
-                    className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-2xl hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                    className="group inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-2xl hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mobile-button text-base sm:text-lg"
                   >
-                    Shop Collection
+                    Shop Moringa Soaps
                     <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                   </Link>
                 </div>
 
-                <div className="flex items-center justify-center lg:justify-start space-x-8 text-sm text-gray-600">
+                <div className="flex items-center justify-center lg:justify-start space-x-4 sm:space-x-8 text-xs sm:text-sm text-gray-600 px-4 sm:px-0">
                   <div className="flex items-center">
                     <Users className="w-5 h-5 text-primary-500 mr-2" />
                     <span className="font-medium">1000+ Customers</span>
@@ -161,10 +161,10 @@ const HomePage = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="relative w-full h-96 lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+                <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[600px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl mx-4 sm:mx-0">
                   <img
                     src="https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="Premium Natural Soap Collection"
+                    alt="Premium Natural Moringa Soap Collection - MoringaCare Pakistan"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -174,24 +174,24 @@ const HomePage = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: 0.8 }}
-                  className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl border border-primary-100"
+                  className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-xl border border-primary-100"
                 >
                   <div className="flex items-center space-x-2 mb-2">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className="w-3 sm:w-5 h-3 sm:h-5 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <p className="text-sm text-gray-600 font-medium">Loved by 1000+ customers</p>
+                  <p className="text-xs sm:text-sm font-medium">Loved by 1000+ customers</p>
                 </motion.div>
 
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: 1 }}
-                  className="absolute -top-6 -right-6 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-2xl p-6 shadow-xl"
+                  className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-xl"
                 >
-                  <div className="text-2xl font-bold">100%</div>
-                  <div className="text-sm opacity-90">Natural</div>
+                  <div className="text-lg sm:text-2xl font-bold">100%</div>
+                  <div className="text-xs sm:text-sm opacity-90">Natural</div>
                 </motion.div>
               </motion.div>
             </div>
@@ -200,7 +200,7 @@ const HomePage = () => {
 
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
@@ -209,11 +209,11 @@ const HomePage = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="text-center group"
                 >
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-2xl mb-4 group-hover:bg-primary-200 transition-colors">
-                    <stat.icon className="w-8 h-8 text-primary-600" />
+                  <div className="inline-flex items-center justify-center w-12 sm:w-16 h-12 sm:h-16 bg-primary-100 rounded-xl sm:rounded-2xl mb-3 sm:mb-4 group-hover:bg-primary-200 transition-colors">
+                    <stat.icon className="w-6 sm:w-8 h-6 sm:h-8 text-primary-600" />
                   </div>
-                  <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
-                  <div className="text-gray-600 font-medium">{stat.label}</div>
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">{stat.number}</div>
+                  <div className="text-sm sm:text-base text-gray-600 font-medium">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -230,22 +230,22 @@ const HomePage = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl md:text-5xl font-bold font-display text-gray-900 mb-4">
-                Featured Soaps
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-gray-900 mb-4">
+                Featured Moringa Soaps
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4 sm:px-0">
                 Discover our most popular and effective natural soap collection
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mobile-product-grid">
               {featuredProducts.map((product, index) => (
                 <motion.div
                   key={product._id}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-primary-100"
+                  className="group bg-white rounded-2xl sm:rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-primary-100 mobile-product-card"
                 >
                   <div className="aspect-square overflow-hidden relative">
                     <img
@@ -255,22 +255,23 @@ const HomePage = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
+                  <div className="p-3 sm:p-4 lg:p-6 mobile-card-padding">
+                    <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors line-clamp-2">
                       {product.name}
                     </h3>
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                    <p className="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2 hidden sm:block">
                       {product.description}
                     </p>
                     <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-primary-600">
+                      <span className="text-lg sm:text-xl lg:text-2xl font-bold text-primary-600">
                         Rs. {product.price?.toLocaleString()}
                       </span>
                       <Link
                         to={`/product/${product._id}`}
-                        className="px-4 py-2 bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-colors duration-200 text-sm font-medium"
+                        className="px-3 sm:px-4 py-2 bg-primary-500 text-white rounded-lg sm:rounded-xl hover:bg-primary-600 transition-colors duration-200 text-xs sm:text-sm font-medium"
                       >
-                        View Details
+                        <span className="hidden sm:inline">View Details</span>
+                        <span className="sm:hidden">View</span>
                       </Link>
                     </div>
                   </div>
@@ -281,9 +282,9 @@ const HomePage = () => {
             <div className="text-center mt-12">
               <Link
                 to="/products"
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-2xl hover:from-primary-600 hover:to-primary-700 transition-all duration-200 shadow-lg hover:shadow-xl group"
+                className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl sm:rounded-2xl hover:from-primary-600 hover:to-primary-700 transition-all duration-200 shadow-lg hover:shadow-xl group mobile-button"
               >
-                View All Products
+                View All Moringa Soaps
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Link>
             </div>
@@ -298,30 +299,30 @@ const HomePage = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl md:text-5xl font-bold font-display text-gray-900 mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-gray-900 mb-4">
                 Why Choose MoringaCare?
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
                 We're committed to providing you with the highest quality natural soaps that nourish and protect your skin
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 group border border-primary-100"
+                  className="bg-white p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 group border border-primary-100 mobile-card"
                 >
-                  <div className={`inline-flex items-center justify-center w-16 h-16 ${feature.color} rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <feature.icon className="w-8 h-8" />
+                  <div className={`inline-flex items-center justify-center w-12 sm:w-16 h-12 sm:h-16 ${feature.color} rounded-xl sm:rounded-2xl mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <feature.icon className="w-6 sm:w-8 h-6 sm:h-8" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     {feature.description}
                   </p>
                 </motion.div>
@@ -338,41 +339,41 @@ const HomePage = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl md:text-5xl font-bold font-display text-gray-900 mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-gray-900 mb-4">
                 What Our Customers Say
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4 sm:px-0">
                 Real stories from real customers who love MoringaCare
               </p>
             </motion.div>
 
             <div className="relative max-w-4xl mx-auto">
-              <div className="overflow-hidden rounded-3xl">
+              <div className="overflow-hidden rounded-2xl sm:rounded-3xl mx-4 sm:mx-0">
                 <motion.div
                   key={activeTestimonial}
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -100 }}
                   transition={{ duration: 0.5 }}
-                  className="bg-white p-8 md:p-12 shadow-xl border border-primary-100"
+                  className="bg-white p-6 sm:p-8 md:p-12 shadow-xl border border-primary-100"
                 >
                   <div className="flex items-center mb-6">
                     {[...Array(testimonials[activeTestimonial].rating)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className="w-5 sm:w-6 h-5 sm:h-6 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <blockquote className="text-xl md:text-2xl text-gray-700 mb-8 italic leading-relaxed">
+                  <blockquote className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-6 sm:mb-8 italic leading-relaxed">
                     "{testimonials[activeTestimonial].comment}"
                   </blockquote>
                   <div className="flex items-center">
                     <img
                       src={testimonials[activeTestimonial].image}
                       alt={testimonials[activeTestimonial].name}
-                      className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-primary-200"
+                      className="w-12 sm:w-16 h-12 sm:h-16 rounded-full object-cover mr-3 sm:mr-4 border-2 border-primary-200"
                     />
                     <div>
-                      <h4 className="font-semibold text-gray-900 text-lg">{testimonials[activeTestimonial].name}</h4>
-                      <p className="text-gray-600">{testimonials[activeTestimonial].location}</p>
+                      <h4 className="font-semibold text-gray-900 text-base sm:text-lg">{testimonials[activeTestimonial].name}</h4>
+                      <p className="text-sm sm:text-base text-gray-600">{testimonials[activeTestimonial].location}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -384,7 +385,7 @@ const HomePage = () => {
                   <button
                     key={index}
                     onClick={() => setActiveTestimonial(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                    className={`w-2 sm:w-3 h-2 sm:h-3 rounded-full transition-all duration-200 ${
                       activeTestimonial === index ? 'bg-primary-500' : 'bg-primary-200'
                     }`}
                   />
@@ -408,23 +409,23 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold font-display text-white mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-white mb-4">
                 Ready to Experience Natural Care?
               </h2>
-              <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg lg:text-xl text-primary-100 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 sm:px-0">
                 Join thousands of satisfied customers who have discovered the power of natural moringa and tea tree oil soaps
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
                 <Link
                   to="/products"
-                  className="group inline-flex items-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-2xl hover:bg-primary-50 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  className="group inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-primary-600 font-semibold rounded-xl sm:rounded-2xl hover:bg-primary-50 transition-all duration-200 shadow-lg hover:shadow-xl mobile-button"
                 >
                   Start Your Journey
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                 </Link>
                 <Link
                   to="/about"
-                  className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-2xl hover:bg-white hover:text-primary-600 transition-all duration-200"
+                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white font-semibold rounded-xl sm:rounded-2xl hover:bg-white hover:text-primary-600 transition-all duration-200 mobile-button"
                 >
                   Learn More
                 </Link>

@@ -48,7 +48,7 @@ const Navbar = () => {
                     ) : (
                       <Link
                         to={item.href}
-                        className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 relative group ${
+                        className={`block px-4 py-4 rounded-xl text-lg font-medium transition-all duration-200 mobile-nav-item ${
                           item.current
                             ? 'bg-primary-50 text-primary-700 shadow-sm'
                             : 'text-gray-700 hover:text-primary-600 hover:bg-primary-50'
@@ -131,13 +131,13 @@ const Navbar = () => {
         </div>
 
         {isOpen && (
-          <div className="lg:hidden border-t border-primary-100">
-            <div className="px-4 pt-4 pb-6 space-y-2 bg-white">
+          <div className="lg:hidden border-t border-primary-100 mobile-nav-overlay">
+            <div className="px-4 pt-4 pb-6 space-y-2 bg-white mobile-container">
               {navigation.map((item) => (
                 <div key={item.name}>
                   {item.dropdown ? (
                     <div>
-                      <div className="px-4 py-3 text-base font-medium text-gray-700">
+                      <div className="px-4 py-3 text-lg font-medium text-gray-700 mobile-nav-item">
                         {item.name}
                       </div>
                       <div className="ml-4 space-y-1">
@@ -145,7 +145,7 @@ const Navbar = () => {
                           <Link
                             key={dropdownItem.name}
                             to={dropdownItem.href}
-                            className="block px-4 py-2 rounded-lg text-sm text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-all duration-200"
+                            className="block px-4 py-3 rounded-lg text-base text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-all duration-200 mobile-nav-item"
                             onClick={() => setIsOpen(false)}
                           >
                             {dropdownItem.name}
@@ -172,7 +172,7 @@ const Navbar = () => {
               {!user && (
                 <Link
                   to="/auth"
-                  className="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 transition-all duration-200"
+                  className="block px-4 py-4 rounded-xl text-lg font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 transition-all duration-200 mobile-nav-item"
                   onClick={() => setIsOpen(false)}
                 >
                   Login
